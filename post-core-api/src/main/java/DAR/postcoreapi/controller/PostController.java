@@ -19,10 +19,10 @@ public class PostController {
     @Autowired
     private PostService postServiсe;
 
-    @GetMapping("/check")
-    public ResponseEntity<String> checkPost() {
-        return new ResponseEntity<>("post-core-api is working", HttpStatus.OK);
-    }
+        @GetMapping("/check")
+        public ResponseEntity<String> checkPost() {
+            return new ResponseEntity<>("post-core-api is working", HttpStatus.OK);
+        }
 
     @PostMapping
     public ResponseEntity<String> createPost(@Valid @RequestBody PostModel postModel){

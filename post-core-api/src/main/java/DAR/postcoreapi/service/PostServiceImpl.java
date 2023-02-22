@@ -13,13 +13,12 @@ public class PostServiceImpl implements PostService {
     private static HashMap<String, PostModel> postMap = new HashMap<>();
 
     static {
-        PostModel postModel1 = new PostModel(UUID.randomUUID().toString(), UUID.randomUUID().toString(), UUID.randomUUID().toString(), "IPhone",   "in progress");
-        PostModel postModel2 = new PostModel(UUID.randomUUID().toString(), UUID.randomUUID().toString(), UUID.randomUUID().toString(), "Samsung",   "in progress");
-        PostModel postModel3 = new PostModel(UUID.randomUUID().toString(), UUID.randomUUID().toString(), UUID.randomUUID().toString(), "PlayStation 5",   "in progress");
+        PostModel postModel1 = new PostModel(UUID.randomUUID().toString(),"ABC123", "123ABC", "IPhone",   "in progress");
+        PostModel postModel2 = new PostModel(UUID.randomUUID().toString(),"ABC234", "234ABC", "Samsung",   "in progress");
+        PostModel postModel3 = new PostModel(UUID.randomUUID().toString(),"ABC345", "345ABC", "PlayStation 5",   "in progress");
         postMap.put(postModel1.getPostId(), postModel1);
         postMap.put(postModel2.getPostId(), postModel2);
         postMap.put(postModel3.getPostId(), postModel3);
-
     }
 
     @Override
